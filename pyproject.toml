@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hopeorgodo-jsonshape"
+version = "0.1.0"
+description = "检查 JSON 输出能否解析、必填字段是否齐全、类型是否匹配、是否有额外字段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "hopeorgodo" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://hopeorgodo.github.io"
+Repository = "https://github.com/hopeorgodo/jsonshape"
+Issues = "https://github.com/hopeorgodo/jsonshape/issues"
+
+[project.scripts]
+jsonshape = "jsonshape:main"
+
+[tool.setuptools]
+py-modules = ["jsonshape"]
